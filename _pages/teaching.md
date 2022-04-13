@@ -2,10 +2,138 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: courses that I taught so far...
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+<h3 class="mt-4">Kathmandu University</h3>
 
-Organize your courses by years, topics, or universities, however you like!
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Structured Programming</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle"  href="#" target="_blank">
+            COMP 103
+        </span>
+      </div>
+    </div>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Undergraduate-level course to teach the structured programming using C programming language.</li>
+      <li class="list-group-item">○ <a href="#" target="_blank">Course materials.</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Object Oriented Programming</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+            COMP 116
+        </span>
+      </div>
+    </div>    
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Undergraduate-level course to teach object oriented concepts using C++ programming language.</li>      
+      <li class="list-group-item">○ <a href="#" target="_blank">Course materials.</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Data Structures and Algorithms</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+            COMP 202
+        </span>
+      </div>
+    </div>    
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Undergraduate-level course to teach the concepts data structures and different paradigms of algorithms using C programming language.</li>
+      <li class="list-group-item">○ <a href="#" target="_blank">Course materials.</a></li>      
+    </ul>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Operating Systems</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+            COMP 307
+        </span>
+      </div>
+    </div>    
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Undergraduate-level course to introduce the concepts of operating systems.</li>
+      <li class="list-group-item">○ <a href="#" target="_blank">Course materials.</a></li>      
+    </ul>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Algorithms and Complexity</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+            COMP 314
+        </span>
+      </div>
+    </div>    
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Undergraduate-level course to introduce the concepts of algorithms and their complexities.</li>
+      <li class="list-group-item">○ <a href="#" target="_blank">Course materials.</a></li>      
+    </ul>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Algorithms</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-blue darken-1 text-uppercase align-middle">
+            COMP 502
+        </span>
+      </div>
+    </div>    
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Graduate-level course to teach the concepts different paradigms of algorithms.</li>
+      <li class="list-group-item">○ <a href="#" target="_blank">Course materials.</a></li>      
+    </ul>
+  </div>
+</div>
+
+
+<h3 class="mt-4">Hunan University</h3>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Theory of Computation</h5>
+      </div>
+    </div>
+    <h6 class="font-italic mt-2 mt-sm-0">First semester - 2006</h6>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Graduate-level course to introduce the conceopt of computation.</li>
+    </ul>
+  </div>
+</div>
