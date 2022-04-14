@@ -6,6 +6,27 @@ description: courses that I taught so far...
 nav: true
 ---
 
+<h3 class="mt-4">Nanyang Technological University</h3>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Computer Networks (Labs)</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle"  href="#" target="_blank">
+            CZ 3006
+        </span>
+      </div>
+    </div>    
+    <h6 class="font-italic mt-2 mt-sm-0">2019-2021</h6>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ CZ3006 lab consists of 4 lab works. Students learn to explore ISO layers, socket programming, make use of Wireshark application to sniff the networks and analyze/visualize the network datasets. </li>
+    </ul>
+  </div>
+</div>
+
+
 <h3 class="mt-4">Kathmandu University</h3>
 
 <div class="card mt-3">
@@ -131,7 +152,7 @@ nav: true
         <h5 class="font-weight-bold">Theory of Computation</h5>
       </div>
     </div>
-    <h6 class="font-italic mt-2 mt-sm-0">First semester - 2006</h6>
+    <h6 class="font-italic mt-2 mt-sm-0">First semester, 2006</h6>
     <ul class="card-text font-weight-light list-group list-group-flush">
       <li class="list-group-item">○ Graduate-level course to introduce the conceopt of computation.</li>
     </ul>
