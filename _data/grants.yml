@@ -1,0 +1,41 @@
+- title: #
+  type: table
+  contents:
+  - title: Research Grant
+    year: 2017       
+    description:
+    - '<span style="color:blue">Title:</span> Developing MOOC on Scientific Research Writing'
+    - '<span style="color:blue">By:</span> Nepal Academy of Science and Technology (NAST), Nepal'  
+    - '<span style="color:blue">Duration:</span> 2017–2018'
+    - '<span style="color:blue">Amount:</span> ~USD 2,000'
+    - '<span style="color:blue">Status:</span> Completed'
+    
+  - title: Workshop Grant
+    year: 2017    
+    description:
+    - '<span style="color:blue">Title:</span> Workshop on Understanding Plagiarism'
+    - '<span style="color:blue">By:</span> University Grants Commission, Nepal'  
+    - '<span style="color:blue">Amount:</span> ~USD 1,000'
+    - '<span style="color:blue">Status:</span> Completed'
+
+  - title: Research Grant
+    year: 2016    
+    description:
+    - '<span style="color:blue">Title:</span> MOOC for Higher Education in Nepal'
+    - '<span style="color:blue">By:</span> IDRC (Canada) and FIT-ED (The Phillipines)'  
+    - '<span style="color:blue">Duration:</span> 2016–2017'
+    - '<span style="color:blue">Amount:</span> USD 30,000'
+    - '<span style="color:blue">Status:</span> Completed'
+
+  - title: Training Grant
+    year: 2015    
+    description:
+    - '<span style="color:blue">Title:</span> Training on Research Methodolofy'
+    - '<span style="color:blue">By:</span> University Grants Commission, Nepal'  
+    - '<span style="color:blue">Amount:</span> ~USD 1,000'
+    - '<span style="color:blue">Status:</span> Completed'
+  
+
+
+  
+  
