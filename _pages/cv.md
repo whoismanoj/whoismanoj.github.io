@@ -2,6 +2,7 @@
 layout: page
 permalink: /cv/
 title: curriculum vitae
+description: who am I? what do I do?
 nav: cv
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 permalink: /grants/
 title: grants
+description: I am fortunate to receive some grants from various sources.
 nav: true
 ---
 

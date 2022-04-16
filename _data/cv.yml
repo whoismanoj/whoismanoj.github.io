@@ -110,38 +110,32 @@
 #    - 'Implemented algorithms for spectral clustering of nodes in a graph, based on minimum graph cut, with applications to data mining and statistics, such as clustering information from documents on the web and medical images segmentation.'
 #  note: '<b>Note:</b> for further details on my research, please see the <a href="/publications/" target="_blank"><b>publications</b></a> page.'
 
-#- title: Honors and Awards
-#  type: table
-#  contents:
-#  - year: Fellowships
-#    items:
-#    - '<a href="https://www.cs.cmu.edu/cmlh-cfp" target="_blank"><b> Center for Machine Learning and Health (CMLH) Fellowship in Digital Health</b></a> (2018)'
-#  - year: Scholarships
-#    items:
-#    - '<a href="https://www.gatescambridge.org/" target="_blank"><b>Gates Cambridge Scholarship</b></a> (2014)'
-#    - '<a href="https://www.womentechmakers.com/scholars" target="_blank"><b>Google Anita Borg Memorial Scholarship</b></a> (2013)'
-#    - '<a href="https://www.iie.org/Programs/GE-Foundation-Scholar-Leaders" target="_blank"><b>GE (General Electric) Foundation Scholar Leaders Program </b></a> (2012)'
-#  - year: Awards
-#    items:
-#    - 'Best poster award at the Eastern European Machine Learning Summer School in Bucharest, Romania (2019)'
-#    - 'Machine Learning Department Teaching Assistant Award (2018)'
-#    - 'Carnegie Mellon University Neurohackathon: 2<sup>nd</sup> place (2017)'
-#    - 'KTH University Programming Challenge, Sweden: Top 10 contestants (2013)'
-#    - 'ACM International Collegiate Programming Contest (<b>ACM-ICPC</b>): Honorable Mention in Southeastern European Regional (2013, 2012, 2011)'
-#    - '<b>Microsoft Imagine Cup</b>:
-#       <ul>
-#          <li> Top 20 in the World Finals (2012) </li>
-#          <li> 1<sup>st</sup> team in the Romanian National Finals (2012) </li>
-#       </ul>'
-#    - '<b>Romanian National Olympiad in Informatics</b>:
-#        <ul>
-#          <li> Gold Medal: 2008 </li>
-#          <li> Bronze Medal: 2010 </li>
-#          <li> 1<sup>st</sup> Place: 2004 </li>
-#          <li> 2<sup>nd</sup> Place: 2005 </li>
-#          <li> Honorable Mention: 2010, 2008, 2007, 2003 </li>
-#        </ul>'
-#    - 'Kangaroo International Mathematical Competition: 2<sup>nd</sup> prize in Romanian National Finals (2009, 2010)'
+- title: Honors and Awards
+  type: table
+  contents:
+  - year: 2019
+    items:
+    - 'Fellowships - Shanghai  Open  University  International  Staff  Exchange  Fellowship  Program  (Interna-tional Visiting Scholar Program)'
+    - 'Shanghai, China'
+    - '10-21 June 2019'
+  - year: 2014
+    items:
+    - 'Scholarship - Erasmus Mundus Scholarship (2 months), INTACT Project'
+    - 'Patras, Greece'
+    - 'Nov - Dec 2014'
+  - year: 2009
+    items:
+    - 'Scholarship - Full Scholarship to participate in e-Learning Technology'
+    - 'Colombo, Sri Lanka'
+    - '2009'
+  - year: 2003
+    items:
+    - 'Scholarship - Chinese Government Scholarship for Master Program'
+    - 'Hunan University, China'
+    - '2003-2006'
+  - year: Awards
+    items:
+    - 'Third position in open source software Competition 2009'
 
 #- title: Teaching Experience
 #  type: table
