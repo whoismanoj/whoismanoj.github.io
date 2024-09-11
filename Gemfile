@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
+    gem 'wdm', '~> 0.1.0'
     gem 'classifier-reborn'
     gem 'jekyll'
     gem 'jekyll-archives'
@@ -9,7 +10,7 @@ group :jekyll_plugins do
     gem 'jekyll-imagemagick'
     gem 'jekyll-jupyter-notebook'
     gem 'jekyll-link-attributes'
-    # gem 'jekyll-minifier'
+    gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-regex-replace'
     gem 'jekyll-scholar'
@@ -18,7 +19,7 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
+    # gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
 end
