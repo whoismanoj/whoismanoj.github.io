@@ -2,11 +2,29 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
+description: Courses I taught so far.
+nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+### Graduate Courses
+- Design and Analysis of Algorithms
+- Data Structures and Algorithms
+- Rsearch Methodology
+- Advanced Operating Systems
+- Advanced Database Management
 
-Organize your courses by years, topics, or universities, however you like!
+### Undergrauate Courses
+- Structure Programming (C)
+- Object Oriented Programming (C++)
+- Advanced Java Programming
+- Introduction to Python Programming
+- Data Structures and Algorithms
+- Opearating Systems
+- Algorithm Complexity
+- Introduction to Data Science
+- Data Mining
+- Computer Networks (Teaching Assistant, NTU)
+- Data Science (Teaching Assistant, NTU)
+- Multidisciplinary Design Project (Teaching Assistant, NTU) 
+
