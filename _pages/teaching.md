@@ -24,7 +24,7 @@ nav_order: 6
 - Algorithm Complexity
 - Introduction to Data Science
 - Data Mining
-- Computer Networks (Teaching Assistant, NTU)
-- Data Science (Teaching Assistant, NTU)
+- Computer Networks Labs (Teaching Assistant, NTU)
+- Data Science and Artificial Intelligence (Teaching Assistant, NTU)
 - Multidisciplinary Design Project (Teaching Assistant, NTU) 
 
