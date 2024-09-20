@@ -5,5 +5,38 @@
 "PhysRev":
   url: https://journals.aps.org/
 
-"Vision":
+"HINDAWI":
+  color: "#1ecf53"
+
+"IFIP":
+  color: "#cf1e41"
+
+"SSCI":
+  color: "#5862c1"
+
+"SAS":
+  color: "#58a6c1"
+
+"eLFAsia":
+  color: "#dedc65"
+
+"HUSOC":
   color: "#009f36"
+
+"FIT-ED":
+  color: "#a2ac89"
+
+"CCCC":
+  color: "#90adf3"
+
+"JUGC":
+  color: "#c195d1"
+
+"IT4D":
+  color: "#b5f3af"
+
+"NCICT":
+  color: "#f3dfaf"
+
+"SKIMA":
+  color: "#f9b0cb"
