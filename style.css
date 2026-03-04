@@ -239,9 +239,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
   
   color: #555;
   font-size: 16px;
@@ -281,34 +281,7 @@
   border-color: #4285f4;
 }
 
-/* Mobile responsiveness - Keep icons HORIZONTAL */
-@media (max-width: 768px) {
-  .social-links {
-    display: flex;              /* Ensure flex layout */
-    flex-direction: row;        /* Force horizontal row */
-    flex-wrap: nowrap;          /* ❌ Prevent wrapping to next line */
-    gap: 8px;                   /* Small gap to save space */
-    margin: 0.8rem 0 1.2rem;
-    overflow-x: auto;           /* ✅ Allow horizontal scroll if needed */
-    padding-bottom: 4px;        /* Space for scrollbar hint */
-    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
-    justify-content: flex-start; /* Align to left (or use center/flex-end) */
-  }
-  
-  .social-link {
-    flex-shrink: 0;             /* ❌ Prevent icons from squishing */
-    width: 44px;                /* Touch-friendly size */
-    height: 44px;
-    border-radius: 8px;
-    font-size: 18px;
-  }
-  
-  .social-link i {
-    font-size: 18px;
-    width: 20px;
-    text-align: center;
-  }
-}
+
 
 /* Dark mode support (if you add it later) */
 @media (prefers-color-scheme: dark) {
