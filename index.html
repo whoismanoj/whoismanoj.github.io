@@ -16,12 +16,16 @@
   <link rel="stylesheet" href="./hyde_files/hyde.css">
   <link rel="stylesheet" href="./hyde_files/css">
 
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Academicons for academic icons (free) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://hyde.getpoole.com/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="https://hyde.getpoole.com/public/favicon.ico">
+  <link rel="shortcut icon" href="/images/favico.ico">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hyde.getpoole.com/atom.xml">
@@ -42,41 +46,14 @@
 <body class="theme-base-08">
 
   <!-- ===== FIXED TOP NAVIGATION BAR ===== -->
-  <header class="top-nav">
-    <div class="nav-container">
-      <div class="nav-brand">
-        <a href="index.html"></a>
-      </div>
-      
-      <nav class="nav-menu" id="navMenu">
-        <a class="nav-item" href="index.html">Home</a>
-        <a class="nav-item" href="research.html">Research</a>
-        <a class="nav-item" href="publications.html">Publications</a>
-        <a class="nav-item" href="teaching.html">Teaching</a>
-        <a class="nav-item" href="supervision.html">Supervision</a>
-        <a class="nav-item" href="talks.html">Talks</a>
-        <a class="nav-item" href="about.html">About Me</a>
-      </nav>
-      
-      <!-- Mobile menu toggle button -->
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">☰</button>
-    </div>
-  </header>
+  <!-- Navigation will be loaded here -->
+  <div id="nav-placeholder"></div>
 
   <!-- ===== MAIN CONTENT AREA (Full Width, No Sidebar) ===== -->
   <main class="content container">
     
-    <!-- Profile Header Section -->
-    <section class="profile-header">
-      <img src="ms_pic.PNG" 
-           alt="Manoj Shakya" 
-           class="profile-img"
-           onerror="this.src='https://via.placeholder.com/120x120?text=MS'; this.onerror=null;">
-      <div class="profile-info">
-        <h1>Manoj Shakya</h1>
-        <p class="title">Assistant Professor<br>Kathmandu University</p>
-      </div>
-    </section>
+    <!-- Load Profile Header -->
+    <div id="profile-placeholder"></div>
 
     <!-- Page Content -->
     <article class="posts">

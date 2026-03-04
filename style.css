@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 42rem; /* Slightly wider without sidebar */
+  max-width: 50rem; /* Slightly wider without sidebar */
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -225,3 +225,91 @@
     padding-top: 1rem !important;
   }
 }
+
+
+/* ===== Social Links - Bigger Icons, Balanced Rectangular ===== */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin: 1rem 0 1.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;           /* Moderate rectangular width */
+  height: 52px;           /* Comfortable height */
+  border-radius: 6px;     /* Subtle rounded corners */
+  background: #f9f9f9;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  padding: 0;             /* Reset padding for icon-centric design */
+}
+
+/* 👉 BIGGER ICONS 👈 */
+.social-link i {
+  font-size: 26px;        /* Much larger icon */
+  width: 30px;            /* Fixed width for alignment */
+  text-align: center;
+  line-height: 1;
+}
+
+/* Hover: lift + brand color */
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: white;
+  border-color: transparent;
+}
+
+/* Brand colors on hover */
+.social-link.email:hover { background: #bf5c54; }
+.social-link.linkedin:hover { background: #0077b5; }
+.social-link.facebook:hover { background: #1877f2; }
+.social-link.scholar:hover { background: #4285f4; }
+
+/* Mobile: slightly smaller but still prominent */
+@media (max-width: 768px) {
+  .social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  
+  .social-link i {
+    font-size: 22px;
+  }
+}
+
+/* Small mobile: stack vertically */
+@media (max-width: 480px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .social-link {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+  }
+  .social-link:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+}
+
