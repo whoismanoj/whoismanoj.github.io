@@ -239,12 +239,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 27px;
-  height: 27px;
+  width: 20px;
+  height: 20px;
   border-radius: 20%;
   
   color: #555;
-  font-size: 25px;
+  font-size: 16px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   border: 0px solid #e0e0e0;
@@ -309,14 +309,16 @@
   color: #333;
 }
 
+/* 👇 VERTICAL STACK CONTAINER 👇 */
 .education-cards {
   display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  flex-direction: column;  /* Stack vertically */
+  gap: 1.25rem;            /* Consistent spacing between cards */
   width: 100%;
-  max-width: 650px;
+  max-width: 650px;        /* Optional: limit width for readability */
 }
 
+/* Individual Card */
 .edu-card {
   display: flex;
   align-items: flex-start;
@@ -327,8 +329,8 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   transition: all 0.25s ease;
-  width: 100%;
-  box-sizing: border-box;
+  width: 100%;             /* Full width of container */
+  box-sizing: border-box;  /* Include padding in width calculation */
 }
 
 .edu-card:hover {
@@ -337,36 +339,7 @@
   border-color: #d0d0d0;
 }
 
-/* Logo Container */
-.edu-logo-container {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  min-width: 120px;
-  min-height: 120px;
-  max-width: 120px;
-  max-height: 120px;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 8px;
-  box-sizing: border-box;
-}
-
-/* Logo Image */
-.edu-logo-img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
-  flex-shrink: 0;
-}
-
-/* Icon Circle (fallback or alternative) */
+/* Icon Circle */
 .edu-icon {
   flex-shrink: 0;
   display: flex;
@@ -380,9 +353,10 @@
   font-size: 24px;
 }
 
+/* Card Content */
 .edu-content {
   flex: 1;
-  min-width: 0;
+  min-width: 0; /* Prevents overflow */
 }
 
 .edu-content h4 {
@@ -411,6 +385,7 @@
   font-size: 0.85rem;
 }
 
+/* Year Badge */
 .edu-year {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -422,49 +397,11 @@
   border: 1px solid #ddd;
 }
 
-/* iPad Specific */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .edu-logo-container {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-  }
-  
-  .edu-card {
-    padding: 1rem;
-    gap: 0.75rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .edu-logo-container {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    padding: 6px;
-  }
-  
-  .edu-content h4 {
-    font-size: 1rem;
-  }
-}
-
-/* Dark Mode */
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .edu-card {
     background: #2a2a2a;
     border-color: #444;
-  }
-  .edu-logo-container {
-    background: #333;
-    border-color: #555;
   }
   .edu-content h4 { color: #f0f0f0; }
   .edu-content .institution { color: #ddd; }
@@ -474,4 +411,12 @@
     color: #ccc;
     border-color: #555;
   }
+}
+
+.edu-logo-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 0%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
