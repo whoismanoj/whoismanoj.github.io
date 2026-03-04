@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #ae2929; /* Hyde dark sidebar color */
+  background: #ae2929;
   padding: 0.75rem 0;
   z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 50rem; /* Slightly wider without sidebar */
+  max-width: 50rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -58,9 +58,10 @@
 .nav-item:hover,
 .nav-item.active {
   color: #fff;
-  border-bottom-color: none; /* Hyde theme-08 accent */
+  border-bottom-color: #e25440;
 }
 
+/* ===== HAMBURGER MENU BUTTON ===== */
 .nav-toggle {
   display: none;
   background: none;
@@ -76,15 +77,15 @@
   color: #e25440;
 }
 
-/* ===== CONTENT AREA (No Sidebar) ===== */
+/* ===== CONTENT AREA ===== */
 .content.container {
   width: 100%;
   max-width: 42rem;
   margin: 0 auto;
-  padding: 5rem 1.5rem 3rem !important; /* Top padding for fixed header */
+  padding: 5rem 1.5rem 3rem !important;
 }
 
-/* Profile section (now in main content) */
+/* Profile Section */
 .profile-header {
   display: flex;
   align-items: center;
@@ -117,14 +118,7 @@
   line-height: 1.4;
 }
 
-.profile-caption {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.75rem;
-  font-style: italic;
-}
-
-/* Content typography */
+/* Content Typography */
 .content h1 {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
@@ -159,15 +153,18 @@
   
   .nav-menu {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed; /* FIXED: was absolute */
+    top: 60px; /* FIXED: was 100% */
     left: 0;
     right: 0;
-    background: #ae2929; /* Hyde dark sidebar color */
+    background: #ae2929;
     flex-direction: column;
     padding: 1rem 1.5rem;
     gap: 0.5rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    z-index: 999;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
   }
   
   .nav-menu.active {
@@ -179,18 +176,17 @@
   }
   
   .nav-item {
-    padding: 0.6rem 0;
+    padding: 0.8rem 1rem;
     border-bottom: none;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
   }
   
   .nav-item:hover,
   .nav-item.active {
-    border-bottom: none;
-    color: #e25440;
-    background: rgba(226, 84, 64, 0.1);
-    padding-left: 0.5rem;
-    border-radius: 4px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    padding-left: 1.25rem;
   }
   
   .profile-header {
@@ -209,51 +205,35 @@
   }
 }
 
-/* ===== PRINT STYLES ===== */
-@media print {
-  .top-nav {
-    position: static;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 0.5rem 0;
-  }
-  .nav-item {
-    color: #aa2727 !important;
-    border-bottom: none !important;
-  }
-  .content.container {
-    padding-top: 1rem !important;
-  }
-}
-
-
-/* ===== Social Links - Hyde Theme Compatible ===== */
+/* ===== SOCIAL LINKS - FIXED ===== */
 .social-links {
   display: flex;
   gap: 12px;
   margin: 1rem 0 1.5rem;
-  justify-content: flex-start; /* Aligns with profile text */
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 20%;
-  
+  width: 44px; /* FIXED: was 20px */
+  height: 44px; /* FIXED: was 20px */
+  border-radius: 50%; /* FIXED: was 20% */
+  background: #f9f9f9; /* FIXED: was missing */
   color: #555;
-  font-size: 16px;
+  font-size: 18px; /* FIXED: was 16px */
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  border: 0px solid #e0e0e0;
+  border: 1px solid #e0e0e0; /* FIXED: was 0px */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-shrink: 0;
 }
 
-/* Hover effects - subtle brand colors */
 .social-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .social-link.email:hover {
@@ -274,30 +254,22 @@
   border-color: #1877f2;
 }
 
-/* Google Scholar - Brand Color */
 .social-link.scholar:hover {
-  background: #4285f4; /* Google Blue */
+  background: #4285f4;
   color: white;
   border-color: #4285f4;
 }
 
-
-
-/* Dark mode support (if you add it later) */
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   .social-link {
     background: #2a2a2a;
     color: #ccc;
     border-color: #444;
   }
-  
-  .social-link:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  }
 }
 
-
-/* ===== Education Section - Vertical Stack Cards ===== */
+/* ===== EDUCATION SECTION ===== */
 .education-section {
   margin: 2.5rem 0;
 }
@@ -309,16 +281,14 @@
   color: #333;
 }
 
-/* 👇 VERTICAL STACK CONTAINER 👇 */
 .education-cards {
   display: flex;
-  flex-direction: column;  /* Stack vertically */
-  gap: 1.25rem;            /* Consistent spacing between cards */
+  flex-direction: column;
+  gap: 1.25rem;
   width: 100%;
-  max-width: 650px;        /* Optional: limit width for readability */
+  max-width: 650px;
 }
 
-/* Individual Card */
 .edu-card {
   display: flex;
   align-items: flex-start;
@@ -329,14 +299,44 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   transition: all 0.25s ease;
-  width: 100%;             /* Full width of container */
-  box-sizing: border-box;  /* Include padding in width calculation */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .edu-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   border-color: #d0d0d0;
+}
+
+/* Logo Container - FIXED */
+.edu-logo-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 0%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+
+
+/* Logo Container - Enforces Size */
+.edu-logo-container {
+  flex-shrink: 0;
+  
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 10px;
+  min-width: 120px;   /* Prevents shrinking */
+  min-height: 120px;  /* Prevents shrinking */
+  max-width: 120px;   /* Prevents growing */
+  max-height: 120px;  /* Prevents growing */
+  
+  overflow: hidden;   /* Clips image if it overflows */
+
+  box-sizing: border-box;
 }
 
 /* Icon Circle */
@@ -353,10 +353,9 @@
   font-size: 24px;
 }
 
-/* Card Content */
 .edu-content {
   flex: 1;
-  min-width: 0; /* Prevents overflow */
+  min-width: 0;
 }
 
 .edu-content h4 {
@@ -385,7 +384,6 @@
   font-size: 0.85rem;
 }
 
-/* Year Badge */
 .edu-year {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -397,11 +395,37 @@
   border: 1px solid #ddd;
 }
 
-/* Dark mode support */
+/* Mobile Education Cards */
+@media (max-width: 768px) {
+  .edu-logo-container {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    
+  }
+  
+  .edu-card {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .edu-content h4 {
+    font-size: 1rem;
+  }
+}
+
+/* Dark Mode Education */
 @media (prefers-color-scheme: dark) {
   .edu-card {
     background: #2a2a2a;
     border-color: #444;
+  }
+  .edu-logo-container {
+    background: #333;
+    border-color: #555;
   }
   .edu-content h4 { color: #f0f0f0; }
   .edu-content .institution { color: #ddd; }
@@ -413,30 +437,15 @@
   }
 }
 
-
-.edu-logo-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 0%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-
-/* Logo Container - Enforces Size */
-.edu-logo-container {
-  flex-shrink: 0;
-  
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 10px;
-  min-width: 120px;   /* Prevents shrinking */
-  min-height: 120px;  /* Prevents shrinking */
-  max-width: 120px;   /* Prevents growing */
-  max-height: 120px;  /* Prevents growing */
-  
-  overflow: hidden;   /* Clips image if it overflows */
-
-  box-sizing: border-box;
+/* Print Styles */
+@media print {
+  .top-nav {
+    position: static;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+  }
+  .content.container {
+    padding-top: 1rem !important;
+  }
 }
