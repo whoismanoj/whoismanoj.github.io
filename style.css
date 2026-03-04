@@ -260,14 +260,6 @@
   border-color: #4285f4;
 }
 
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  .social-link {
-    background: #2a2a2a;
-    color: #ccc;
-    border-color: #444;
-  }
-}
 
 /* ===== EDUCATION SECTION ===== */
 .education-section {
@@ -417,25 +409,7 @@
   }
 }
 
-/* Dark Mode Education */
-@media (prefers-color-scheme: dark) {
-  .edu-card {
-    background: #2a2a2a;
-    border-color: #444;
-  }
-  .edu-logo-container {
-    background: #333;
-    border-color: #555;
-  }
-  .edu-content h4 { color: #f0f0f0; }
-  .edu-content .institution { color: #ddd; }
-  .edu-content .location { color: #aaa; }
-  .edu-year {
-    background: #3a3a3a;
-    color: #ccc;
-    border-color: #555;
-  }
-}
+
 
 /* Print Styles */
 @media print {
