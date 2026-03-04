@@ -1,13 +1,12 @@
 /**
  * Navigation Script for Manoj Shakya Website
- * Handles mobile menu toggle, active link highlighting, and component loading
+ * Mobile-optimized with component loading
  */
 
-// ===== LOAD COMPONENTS ON PAGE LOAD =====
+// ===== SINGLE DOMContentLoaded LISTENER =====
 document.addEventListener('DOMContentLoaded', function() {
   loadNavigation();
   loadProfileHeader();
-  initSocialLinks();
 });
 
 // Load navigation component
@@ -23,11 +22,10 @@ function loadNavigation() {
     .then(data => {
       placeholder.innerHTML = data;
       placeholder.classList.add('loaded');
-      initNavigation(); // Initialize nav scripts after injection
+      initNavigation(); // Initialize AFTER content is loaded
     })
     .catch(error => {
       console.error('Navigation load error:', error);
-      // Fallback: minimal nav if component fails
       placeholder.innerHTML = `
         <header class="top-nav">
           <div class="nav-container">
@@ -39,7 +37,7 @@ function loadNavigation() {
     });
 }
 
-// Load profile header component (only if placeholder exists)
+// Load profile header component
 function loadProfileHeader() {
   const placeholder = document.getElementById('profile-placeholder');
   if (!placeholder) return;
@@ -52,7 +50,7 @@ function loadProfileHeader() {
     .then(data => {
       placeholder.innerHTML = data;
       placeholder.classList.add('loaded');
-      initSocialLinks(); // Initialize social link interactions
+      initSocialLinks();
     })
     .catch(error => {
       console.error('Profile header load error:', error);
@@ -60,26 +58,22 @@ function loadProfileHeader() {
     });
 }
 
-// Initialize navigation toggle + active page highlighting
+// Initialize navigation (called after nav-component loads)
 function initNavigation() {
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
   
   if (navToggle && navMenu) {
+    // Toggle menu on hamburger click
     navToggle.addEventListener('click', function(e) {
       e.stopPropagation();
-      
-      // Toggle menu
       navMenu.classList.toggle('active');
+      this.classList.toggle('active'); // For hamburger animation
       
-      // Toggle hamburger animation
-      this.classList.toggle('active');
-      
-      // Update aria-expanded for accessibility
       const expanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', !expanded);
       
-      // Subtle haptic feedback on mobile
+      // Haptic feedback on mobile
       if (navigator.vibrate) {
         navigator.vibrate(10);
       }
@@ -94,10 +88,10 @@ function initNavigation() {
       }
     });
     
-    // Close menu when a link is clicked (mobile)
+    // Close menu when a nav link is clicked
     navMenu.querySelectorAll('.nav-item').forEach(link => {
       link.addEventListener('click', function() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth <= 768) {
           navMenu.classList.remove('active');
           navToggle.classList.remove('active');
           navToggle.setAttribute('aria-expanded', 'false');
@@ -105,7 +99,7 @@ function initNavigation() {
       });
     });
     
-    // Highlight current page in navigation
+    // Highlight current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-item').forEach(link => {
       link.classList.remove('active');
