@@ -413,10 +413,32 @@
   }
 }
 
+
 .edu-logo-img {
   width: 120px;
   height: 120px;
   border-radius: 0%;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+
+
+
+/* Logo Container - Enforces Size */
+.edu-logo-container {
+  flex-shrink: 0;
+  
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 10px;
+  min-width: 120px;   /* Prevents shrinking */
+  min-height: 120px;  /* Prevents shrinking */
+  max-width: 120px;   /* Prevents growing */
+  max-height: 120px;  /* Prevents growing */
+  
+  overflow: hidden;   /* Clips image if it overflows */
+
+  box-sizing: border-box;
 }
