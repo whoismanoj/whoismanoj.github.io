@@ -296,3 +296,134 @@
   }
 }
 
+
+/* ===== Education Section - Vertical Stack Cards ===== */
+.education-section {
+  margin: 2.5rem 0;
+}
+
+.education-section h3 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  color: #333;
+}
+
+/* 👇 VERTICAL STACK CONTAINER 👇 */
+.education-cards {
+  display: flex;
+  flex-direction: column;  /* Stack vertically */
+  gap: 1.25rem;            /* Consistent spacing between cards */
+  width: 100%;
+  max-width: 650px;        /* Optional: limit width for readability */
+}
+
+/* Individual Card */
+.edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+  width: 100%;             /* Full width of container */
+  box-sizing: border-box;  /* Include padding in width calculation */
+}
+
+.edu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border-color: #d0d0d0;
+}
+
+/* Icon Circle */
+.edu-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 24px;
+}
+
+/* Card Content */
+.edu-content {
+  flex: 1;
+  min-width: 0; /* Prevents overflow */
+}
+
+.edu-content h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.3;
+}
+
+.edu-content .institution {
+  margin: 0 0 0.3rem 0;
+  font-weight: 500;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.edu-content .location {
+  margin: 0 0 0.6rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.edu-content .location i {
+  margin-right: 4px;
+  font-size: 0.85rem;
+}
+
+/* Year Badge */
+.edu-year {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #f0f0f0;
+  color: #555;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Optional: Degree-specific icon colors */
+.edu-card:nth-child(1) .edu-icon { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); } /* PhD - Purple */
+.edu-card:nth-child(2) .edu-icon { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); } /* Master's - Blue */
+.edu-card:nth-child(3) .edu-icon { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); } /* Bachelor's - Green */
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .edu-card {
+    background: #2a2a2a;
+    border-color: #444;
+  }
+  .edu-content h4 { color: #f0f0f0; }
+  .edu-content .institution { color: #ddd; }
+  .edu-content .location { color: #aaa; }
+  .edu-year {
+    background: #3a3a3a;
+    color: #ccc;
+    border-color: #555;
+  }
+}
+
+
+.edu-logo-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 0%;
+  object-fit: cover;
+  
+  flex-shrink: 0;
+}
