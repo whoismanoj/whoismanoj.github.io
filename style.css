@@ -260,6 +260,7 @@
 }
 
 
+
 /* ===== EDUCATION SECTION ===== */
 .education-section {
   margin: 2.5rem 0;
@@ -407,8 +408,6 @@
     font-size: 1rem;
   }
 }
-
-
 
 /* Print Styles */
 @media print {
